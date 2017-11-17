@@ -6,7 +6,7 @@ email: eric.jianlizhang@gmail.com
 description: ""
 keyword: ""
 url: "https://bravomao.github.io/"
-baseurl: "/about"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/BravoMao.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
