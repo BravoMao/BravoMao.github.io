@@ -7,8 +7,7 @@ author:     "Mao"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活
-    - 前端开发
-    - JavaScript
+    - Git
 ---
 
 > “Let's rock on. ”
@@ -16,8 +15,8 @@ tags:
 
 ## 前言
 
-大概因为在巴黎的一个人的生活太无聊了，既然找不到爱情的话，那要不多做做一些有趣的事情吧，于是就这么开通了一个mao's Blog。
-开通这个blog，纯粹是没事的时候有个地方记录下自己的想法，更新大概，非常兴趣使然。
+大概因为在巴黎的一个人的生活太无聊了,每个周末都得想该去哪里玩，闲的发慌。那要不多做做一些有趣的事情吧，于是就这么开通了一个mao's Blog。
+这个blog，纯粹是没事的时候有个地方记录下自己的想法，更新大概，非常兴趣使然。
 
 
 
@@ -26,9 +25,7 @@ tags:
 
 ## 正文
 
-接下来说说搭建这个博客的技术细节。  
-
-正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+这个博客用了 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常简单。
 
 其优点非常明显：
 
@@ -39,34 +36,35 @@ tags:
 * Jekyll 的自定制非常容易，基本就是个模版引擎
 
 
-本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy) 迁移了一个[镜像](http://huxpro.gitcafe.io)出来，结果还是巨慢。
+## 搭建流程
+用gitpage＋jekyll 搭建模版真的是非常简单，步骤如下：
 
-哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 **pending 在了 Google Fonts** 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。  
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。
+* 在github 上建立一个 abc.github.io 的repo（abc＝github） 域名
+* 倒入一些jekyll 的模版（比如你可以直接用我这模版）
+* 在浏览器输入abc.github.io
 
-
+这样你就可以访问你的个人blog啦
 
 ---
 
-配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
+## Git page
+一个简单的hello git page 流程：
+* 在github上 创建一个repo：username.github.io
+* clone repo 到本地
+* 创建一个indexl.html，并在里面输入“hello git page”
+* 提交所有的commit 到 github
+* 在浏览器输入 https://username.github.io
 
-大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）
+---
 
-本地调试环境需要 `gem install jekyll`，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功
+## Jekyll 本地安装
+Jekyll 的安装可以参考官方教程 [Jekyll install](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll)
 
-Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），**不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……**所以为了体验，也补了不少 CSS 进去
-
-最后就进入了耗时反而最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。
-
-第二天考虑中文字体的渲染，fork 了 [Type is Beautiful](http://www.typeisbeautiful.com/) 的 `font` CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。
-
+---
 
 ## 后记
+讲道理，我觉得我是一个蛮懒的人，写博客这种事情，大概对我来说挺难坚持的,这是我第一篇blog，但希望不是最后一篇吧，以及感谢大神的模版，你们有兴趣
+可以去他的主页看 [Hux](https://github.com/huxpro/huxpro.github.io/)
 
-回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。
-
-在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。
-
-如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
 
 ——Mao 后记于 paris 2017.11
