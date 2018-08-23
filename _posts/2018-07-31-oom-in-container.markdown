@@ -4,7 +4,7 @@ title:      "Docker容器里面的OOM问题"
 subtitle:   " \"Running a JVM in a Container Without Getting OOM\""
 date:       2018-07-31 15:42:00
 author:     "Mao"
-header-img: "img/home-bg.jpg"
+header-img: "img/post-bg-2018-07.jpg"
 comments: true
 tags:
     - Java

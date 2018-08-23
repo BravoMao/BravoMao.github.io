@@ -4,7 +4,7 @@ title:      "Spring AOP 整理"
 subtitle:   " \"A simple spring AOP tutorial \""
 date:       2018-08-21 14:42:00
 author:     "Mao"
-header-img: "img/home-bg.jpg"
+header-img: "img/post-bg-2018-08.png"
 comments: true
 tags:
     - Java
