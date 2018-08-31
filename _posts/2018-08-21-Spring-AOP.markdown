@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Spring AOP 整理"
-subtitle:   " \"A simple spring AOP tutorial \""
+subtitle:   " \"A simple spring AOP introduction \""
 date:       2018-08-21 14:42:00
 author:     "Mao"
 header-img: "img/post-bg-2018-08.png"
@@ -77,6 +77,8 @@ public class LoggingAspect {
 
 切面，切面是切点，通知的集合体，他定义了如何将切点们织入到指定的连接点中，也定义了织入的代码逻辑。
 
-### SpringAOP 实现原理
 
-### SpringAOP 的一个基本应用
+
+Spring AOP大概就简单介绍到这，在之后的两篇blog会讲一下SpringAOP 的实现原理以及一个SpringAOP的简单应用
+
+——Mao 后记于 paris 2018.08
