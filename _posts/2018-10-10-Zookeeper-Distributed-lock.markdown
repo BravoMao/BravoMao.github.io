@@ -4,7 +4,7 @@ title:      "使用Zookeeper实现分布式锁"
 subtitle:   " \"Using Zookeeper to realise a distributed lock \""
 date:       2018-10-10 13:18:00
 author:     "Mao"
-header-img: "img/post-bg-2018-08.png"
+header-img: "img/post-bg-2018-10.png"
 comments: true
 tags:
     - Zookeeper
